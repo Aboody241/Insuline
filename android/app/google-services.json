@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "76757401402",
+    "project_id": "insuline95-6551c",
+    "storage_bucket": "insuline95-6551c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:76757401402:android:36eacd4e861b052d9d1a03",
+        "android_client_info": {
+          "package_name": "com.example.insulin95"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqhtnv8bQ2Vo4dSuYB3O7u7rvghnt_I58"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -2,7 +2,7 @@
 
 # 🩸 Insulin95 — Smart Diabetes Management App
 
-**Insulin95** is a modern Flutter-based mobile application designed to help diabetic patients manage their daily routines effectively.
+**Insulin-95** is a modern Flutter-based mobile application designed to help diabetic patients manage their daily routines effectively.
 The app provides tools to track blood sugar levels, manage medications, calculate BMI, plan meals, and receive AI-driven health insights.
 
 ---

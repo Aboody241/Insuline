@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:insulin95/core/assets/fonts.dart';
 import 'package:insulin95/core/utlites/size_widgets.dart';
-import 'package:insulin95/core/widgets/custom_app_bar.dart';
-import 'package:insulin95/features/home/features/home_page_feature/interface/view/widgets/appBar_title.dart';
+
 import 'package:insulin95/features/home/features/home_page_feature/interface/view/widgets/feature_title.dart';
 import 'package:insulin95/features/home/features/home_page_feature/interface/view/widgets/morning_user.dart';
 import 'package:insulin95/features/home/features/home_page_feature/interface/view/widgets/sections/home_indicators.dart';
@@ -69,13 +68,7 @@ class HomePageBody extends StatelessWidget {
 
                 VerticalSpace(3).of(context),
 
-                const FeaturesTitle(featureTitle: 'Medication Reminders'),
-
-                VerticalSpace(0.5).of(context),
-
                 const ReminderWidgets(),
-
-                VerticalSpace(2.1).of(context),
 
                 const FeaturesTitle(featureTitle: "Quick Access"),
 
@@ -83,7 +76,9 @@ class HomePageBody extends StatelessWidget {
 
                 const QuickAccessButtons(),
 
-                VerticalSpace(2).of(context),
+                VerticalSpace(3).of(context),
+
+                const FeaturesTitle(featureTitle: 'Medication Reminders'),
               ],
             ),
           ),

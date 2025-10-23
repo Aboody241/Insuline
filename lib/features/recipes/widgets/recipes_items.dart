@@ -37,6 +37,8 @@ class _RecipesItemsState extends State<RecipesItems> {
   }
 
   Future<void> fetchMeals() async {
+    if (!mounted) return;
+
     setState(() {
       isLoading = true;
       meals = [];
@@ -47,21 +49,28 @@ class _RecipesItemsState extends State<RecipesItems> {
       if (widget.category == "All") {
         url = "https://www.themealdb.com/api/json/v1/1/search.php?s=";
       } else {
-        url = "https://www.themealdb.com/api/json/v1/1/filter.php?c=${widget.category}";
+        url =
+            "https://www.themealdb.com/api/json/v1/1/filter.php?c=${widget.category}";
       }
 
       final response = await http.get(Uri.parse(url));
       if (response.statusCode == 200) {
         final data = json.decode(response.body);
-        setState(() {
-          meals = data["meals"] ?? [];
-          isLoading = false;
-        });
+        if (mounted) {
+          setState(() {
+            meals = data["meals"] ?? [];
+            isLoading = false;
+          });
+        }
       } else {
-        setState(() => isLoading = false);
+        if (mounted) {
+          setState(() => isLoading = false);
+        }
       }
     } catch (e) {
-      setState(() => isLoading = false);
+      if (mounted) {
+        setState(() => isLoading = false);
+      }
     }
   }
 

@@ -59,7 +59,13 @@ class _WelcomePageState extends State<WelcomePage>
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              // أنيميشن Lottie (مثلا أي أنيميشن ترحيب تحطه في assets)
+              Lottie.asset(
+                "assets/animations/welcome.json",
+                width: 200,
+                height: 200,
+                repeat: false,
+              ),
+              const SizedBox(height: 120),
               Text(
                 "Welcome, ${userName} 👋",
                 style: const TextStyle(
@@ -67,14 +73,6 @@ class _WelcomePageState extends State<WelcomePage>
                   fontWeight: FontWeight.bold,
                   color: KprimaryC,
                 ),
-              ),
-              const SizedBox(height: 120),
-
-              Lottie.asset(
-                "assets/animations/welcome.json",
-                width: 200,
-                height: 200,
-                repeat: false,
               ),
             ],
           ),

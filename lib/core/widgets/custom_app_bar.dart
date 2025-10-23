@@ -3,17 +3,17 @@ import 'package:insulin95/core/assets/colors.dart';
 import 'package:insulin95/core/assets/on_board_style.dart';
 
 class BasicAppBar extends StatelessWidget implements PreferredSizeWidget {
-  final Widget title;
+  final  Widget title;
   final Widget? leading;
   final double? elevation;
-  final dynamic actions;
+  final List<Widget> actions;
 
   const BasicAppBar({
     super.key,
     required this.title,
     this.leading,
     this.elevation,
-    this.actions,
+    this.actions = const [],
   });
 
   @override
@@ -96,7 +96,7 @@ class CenterBackAppBar extends StatelessWidget implements PreferredSizeWidget {
       ),
       title: Text(
         title,
-        style: OnBoardStyle.onBoardTitle, // نفس ستايلك
+        style: OnBoardStyle.onBoardTitle.copyWith(fontSize: 20), // نفس ستايلك
       ),
     );
   }

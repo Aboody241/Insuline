@@ -6,14 +6,17 @@ import 'package:insulin95/core/utlites/size_widgets.dart';
 class HomeMedicalRemider extends StatelessWidget {
   final String title;
   final String time;
-  const HomeMedicalRemider({super.key, required this.title, required this.time});
+  const HomeMedicalRemider({
+    super.key,
+    required this.title,
+    required this.time,
+  });
 
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 10),
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Container(
             padding: EdgeInsets.symmetric(vertical: 13, horizontal: 13),
@@ -23,9 +26,10 @@ class HomeMedicalRemider extends StatelessWidget {
             ),
             child: Icon(Icons.watch_later_outlined, size: 32),
           ),
+          HorizentalSpace(3).of(context),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            
+
             children: [
               Text(
                 title,
@@ -33,13 +37,13 @@ class HomeMedicalRemider extends StatelessWidget {
                 textAlign: TextAlign.left,
               ),
               Text(
-                  time,
+                time,
                 style: InsulinNormalFonts.smallFont14.copyWith(color: KtherdC),
                 textAlign: TextAlign.left,
               ),
             ],
           ),
-          HorizentalSpace(3).of(context),
+          Spacer(),
           Container(
             padding: EdgeInsets.symmetric(vertical: 5, horizontal: 15),
             decoration: BoxDecoration(

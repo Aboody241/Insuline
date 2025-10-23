@@ -7,10 +7,9 @@ import 'package:insulin95/controllers/cubit/username/username_cubit.dart';
 import 'package:insulin95/controllers/cubit/BMI/calculatebmi/calculatebmi_cubit.dart';
 import 'package:insulin95/core/assets/colors.dart';
 import 'package:insulin95/data/models/medication_model.dart';
-import 'package:insulin95/features/User%20Welcome/welocomePage.dart';
-import 'package:insulin95/features/navigation/navbar/nav_Bar.dart';
+import 'package:insulin95/data/models/bmi_result_model.dart';
+import 'package:insulin95/features/home/features/home_page_feature/interface/view/home_page_view.dart';
 import 'package:insulin95/features/splash/interface/Splash/Splash_view.dart';
-import 'package:insulin95/features/splash/interface/widgets/splash_view_body.dart';
 import 'firebase_options.dart';
 
 void main() async {
@@ -20,6 +19,7 @@ void main() async {
 
   await Hive.initFlutter();
   Hive.registerAdapter(MedicationAdapter());
+  Hive.registerAdapter(BmiResultAdapter());
 
   runApp(
     MultiBlocProvider(
@@ -44,7 +44,7 @@ class Insulin95 extends StatelessWidget {
         textTheme: GoogleFonts.lexendTextTheme(),
         scaffoldBackgroundColor: KwhiteC,
       ),
-      home: const NavBar(),
+      home: const SplashView(),
     );
   }
 }

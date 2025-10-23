@@ -19,19 +19,19 @@ class BmiPageBody extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 15),
       child: Column(
         children: [
-          BasicFormField(
-            controller: weightController,
-            keyboardType: TextInputType.number,
-
-            textHint: "Weight  (kg)",
-            sufixIcon: Icon(Icons.scale_sharp, color: KtherdC),
-          ),
           //Height
           BasicFormField(
             controller: heightController,
             keyboardType: TextInputType.number,
             textHint: "Height  (cm)",
             sufixIcon: Icon(Icons.height_rounded, color: KtherdC),
+          ),
+          BasicFormField(
+            controller: weightController,
+            keyboardType: TextInputType.number,
+
+            textHint: "Weight  (kg)",
+            sufixIcon: Icon(Icons.scale_sharp, color: KtherdC),
           ),
           VerticalSpace(2).of(context),
 
@@ -41,6 +41,47 @@ class BmiPageBody extends StatelessWidget {
                 return BmiReasault(
                   resault: state.bmi.toStringAsFixed(2), // دقة أعلى
                   status: state.category,
+                );
+              }
+              if (state is BmiSaved) {
+                return BmiReasault(
+                  resault: state.bmi.toStringAsFixed(2), // دقة أعلى
+                  status: state.category,
+                );
+              }
+              if (state is BmiSaveSuccess) {
+                return Column(
+                  children: [
+                    BmiReasault(
+                      resault: state.bmi.toStringAsFixed(2), // دقة أعلى
+                      status: state.category,
+                    ),
+                    VerticalSpace(1).of(context),
+                    Container(
+                      padding: EdgeInsets.all(10),
+                      decoration: BoxDecoration(
+                        color: Colors.green.withOpacity(0.1),
+                        borderRadius: BorderRadius.circular(8),
+                        border: Border.all(color: Colors.green),
+                      ),
+                      child: Row(
+                        children: [
+                          Icon(Icons.check_circle, color: Colors.green, size: 20),
+                          SizedBox(width: 8),
+                          Text(
+                            "BMI result saved successfully!",
+                            style: TextStyle(color: Colors.green, fontWeight: FontWeight.w500),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                );
+              }
+              if (state is BmiError) {
+                return Text(
+                  state.message,
+                  style: TextStyle(color: Colors.red),
                 );
               }
               return const Text("Enter your data to calculate BMI");
@@ -67,11 +108,25 @@ class BmiPageBody extends StatelessWidget {
 
           VerticalSpace(2).of(context),
 
-          CustomButton1(
-            color: KsecondaryC,
-            title: "Save Result",
-            titleColor: KblackC,
-            ontap: () {},
+          BlocBuilder<BmiCubit, BmiState>(
+            builder: (context, state) {
+              if (state is BmiCalculated) {
+                return CustomButton1(
+                  color: KsecondaryC,
+                  title: "Save Result",
+                  titleColor: KblackC,
+                  ontap: () {
+                    context.read<BmiCubit>().saveBmiResult(
+                      state.bmi,
+                      state.category,
+                      state.weight,
+                      state.height,
+                    );
+                  },
+                );
+              }
+              return const SizedBox.shrink();
+            },
           ),
         ],
       ),

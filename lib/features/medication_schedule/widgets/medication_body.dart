@@ -4,6 +4,9 @@ import 'package:awesome_dialog/awesome_dialog.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:hive/hive.dart';
+import 'package:hive_flutter/hive_flutter.dart';
+import 'package:intl/intl.dart';
+
 import 'package:insulin95/core/assets/colors.dart';
 import 'package:insulin95/core/assets/fonts.dart';
 import 'package:insulin95/core/widgets/custom_app_bar.dart';
@@ -19,7 +22,8 @@ class MedicationBody extends StatefulWidget {
 }
 
 class _MedicationBodyState extends State<MedicationBody> {
-  late Box<Medication> medicationBox;
+  Box<Medication>? _medicationBox;
+  bool _opening = true;
 
   @override
   void initState() {
@@ -28,15 +32,22 @@ class _MedicationBodyState extends State<MedicationBody> {
   }
 
   Future<void> _openBox() async {
-    medicationBox = await Hive.openBox<Medication>('medications');
-    _checkExpiredMedications();
-    setState(() {});
+    // Ensure Hive is initialized somewhere in app startup (Hive.initFlutter()).
+    final box = await Hive.openBox<Medication>('medications');
+    _medicationBox = box;
+    await _checkExpiredMedications(box);
+    if (!mounted) return;
+    setState(() => _opening = false);
   }
 
-  void _checkExpiredMedications() {
-    for (var med in medicationBox.values.toList()) {
-      if (med.endDate != null && DateTime.now().isAfter(med.endDate!)) {
-        med.delete(); // مسح الأدوية اللي انتهت مدتها
+  Future<void> _checkExpiredMedications(Box<Medication> box) async {
+    final now = DateTime.now();
+    // toList() so we don't mutate while iterating
+    final meds = box.values.toList();
+    for (final med in meds) {
+      final end = med.endDate;
+      if (end != null && now.isAfter(end)) {
+        await med.delete();
       }
     }
   }
@@ -51,14 +62,10 @@ class _MedicationBodyState extends State<MedicationBody> {
       builder: (context) {
         return AddMedicationForm(
           onSave: (name, time, endDate) async {
-            final medication = Medication(
-              name: name,
-              time: time,
-              endDate: endDate,
-            );
-            await medicationBox.add(medication);
-            Navigator.pop(context);
-            setState(() {});
+            final medication = Medication(name: name, time: time, endDate: endDate);
+            await _medicationBox?.add(medication);
+            if (mounted) Navigator.pop(context);
+            // No need to setState if we use ValueListenableBuilder
           },
         );
       },
@@ -66,65 +73,86 @@ class _MedicationBodyState extends State<MedicationBody> {
   }
 
   @override
+  void dispose() {
+    // Optional: keep box open app-wide. If this screen owns it, close here.
+    _medicationBox?.close();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
+    final dateFmt = DateFormat('dd/MM/yyyy');
+
+    if (_opening) {
+      return const Scaffold(
+        appBar: CenterBackAppBar(title: "Medication Schedule"),
+        body: Center(child: CircularProgressIndicator()),
+      );
+    }
+
+    final box = _medicationBox!;
     return Scaffold(
-      appBar: CenterBackAppBar(title: "Medication Schedule"),
+      appBar: const CenterBackAppBar(title: "Medication Schedule"),
       body: Column(
         children: [
           Expanded(
-            child: medicationBox.isEmpty
-                ? const Center(
+            child: ValueListenableBuilder<Box<Medication>>(
+              valueListenable: box.listenable(),
+              builder: (context, medsBox, _) {
+                if (medsBox.isEmpty) {
+                  return const Center(
                     child: Text(
                       "No medications added yet",
                       style: TextStyle(color: Colors.grey),
                     ),
-                  )
-                : ListView.builder(
-                    itemCount: medicationBox.length,
-                    itemBuilder: (context, index) {
-                      final med = medicationBox.getAt(index)!;
-                      return ListTile(
-                        minVerticalPadding: 10,
-                        leading: SizedBox(
-                          height: 30,
-                          width: 30,
-                          child: SvgPicture.asset(
-                            "assets/icons/medication_icon.svg",
-                          ),
-                        ),
-                        title: Text(
-                          med.name,
-                          style: InsulinNormalFonts.meduimNormalFont,
-                        ),
-                        subtitle: Text(
-                          "${med.time} • Until: ${med.endDate != null ? "${med.endDate!.day}/${med.endDate!.month}/${med.endDate!.year}" : "Not set"}",
-                          style: TextFontStyleSecColor.smallFont,
-                        ),
-                        trailing: IconButton(
-                          onPressed: () async {
-                            AwesomeDialog(
-                              context: context,
-                              dialogType: DialogType.warning,
-                              animType: AnimType.rightSlide,
-                              title: 'Warning !',
-                              desc: 'Make Sure if You Want to Delete it.',
-                              btnCancelOnPress: () {},
-                              btnOkOnPress: () async {
-                                await med.delete();
-                                setState(() {});
-                              },
-                            ).show();
-                            setState(() {});
-                          },
-                          icon: const Icon(
-                            Icons.delete,
-                            size: 25,
-                            color: Colors.red,
-                          ),
-                        ),
-                      );
-                    },
-                  ),
+                  );
+                }
+
+                return ListView.builder(
+                  itemCount: medsBox.length,
+                  itemBuilder: (context, index) {
+                    final med = medsBox.getAt(index);
+                    if (med == null) return const SizedBox.shrink();
+
+                    final until = med.endDate != null
+                        ? dateFmt.format(med.endDate!)
+                        : "Not set";
+
+                    return ListTile(
+                      minVerticalPadding: 10,
+                      leading: SizedBox(
+                        height: 27,
+                        width: 27,
+                        child: SvgPicture.asset("assets/icons/medication_icon.svg"),
+                      ),
+                      title: Text(med.name, style: InsulinNormalFonts.meduimNormalFont),
+                      subtitle: Text(
+                        "${med.time} • Until: $until",
+                        style: TextFontStyleSecColor.smallFont,
+                      ),
+                      trailing: IconButton(
+                        onPressed: () {
+                          AwesomeDialog(
+                            context: context,
+                            dialogType: DialogType.warning,
+                            animType: AnimType.rightSlide,
+                            title: 'Warning !',
+                            desc: 'Make sure you want to delete it.',
+                            btnCancelOnPress: () {},
+                            btnOkOnPress: () async {
+                              await med.delete();
+                              // ValueListenableBuilder will refresh; no setState needed
+                            },
+                          ).show();
+                          // ❌ Remove the extra setState() here
+                        },
+                        icon: const Icon(Icons.delete, size: 25, color: Colors.red),
+                      ),
+                    );
+                  },
+                );
+              },
+            ),
           ),
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 35, horizontal: 15),

@@ -84,6 +84,12 @@ class HomeBMIIndicator extends StatelessWidget {
         if (state is BmiCalculated) {
           bmiText = state.bmi.toStringAsFixed(2);
           categoryText = state.category;
+        } else if (state is BmiSaved) {
+          bmiText = state.bmi.toStringAsFixed(2);
+          categoryText = state.category;
+        } else if (state is BmiSaveSuccess) {
+          bmiText = state.bmi.toStringAsFixed(2);
+          categoryText = state.category;
         }
 
         return GestureDetector(

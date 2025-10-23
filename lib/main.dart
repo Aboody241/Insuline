@@ -44,7 +44,7 @@ class Insulin95 extends StatelessWidget {
         textTheme: GoogleFonts.lexendTextTheme(),
         scaffoldBackgroundColor: KwhiteC,
       ),
-      home: const SplashViewBody(),
+      home: const NavBar(),
     );
   }
 }

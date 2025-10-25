@@ -5,6 +5,7 @@ import 'package:insulin95/core/assets/colors.dart';
 import 'package:insulin95/core/utlites/size_widgets.dart';
 import 'package:insulin95/core/widgets/custom_buttons.dart';
 import 'package:insulin95/features/ChatBoot/chatBoot_view.dart';
+import 'package:insulin95/features/food%20generation/ui/pages/food_generation_page.dart';
 
 class QuickAccessButtons extends StatelessWidget {
   const QuickAccessButtons({super.key});
@@ -21,12 +22,20 @@ class QuickAccessButtons extends StatelessWidget {
               color: KprimaryC,
               title: "Food Generator",
               titleColor: KwhiteC,
+              ontap: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => FoodGenerationPage()),
+                );
+              },
             ),
             CustomButton2(
               padd: EdgeInsets.symmetric(horizontal: 10, vertical: 12),
               color: KprimaryC,
               title: "Products Scanner",
               titleColor: KwhiteC,
+              ontap: () {
+                // TODO: Add Products Scanner functionality
+              },
             ),
           ],
         ),

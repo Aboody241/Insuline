@@ -8,7 +8,6 @@ import 'package:insulin95/controllers/cubit/BMI/calculatebmi/calculatebmi_cubit.
 import 'package:insulin95/core/assets/colors.dart';
 import 'package:insulin95/data/models/medication_model.dart';
 import 'package:insulin95/data/models/bmi_result_model.dart';
-import 'package:insulin95/features/home/features/home_page_feature/interface/view/home_page_view.dart';
 import 'package:insulin95/features/splash/interface/Splash/Splash_view.dart';
 import 'firebase_options.dart';
 
@@ -18,13 +17,16 @@ void main() async {
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
 
   await Hive.initFlutter();
+
   Hive.registerAdapter(MedicationAdapter());
+
   Hive.registerAdapter(BmiResultAdapter());
 
   runApp(
     MultiBlocProvider(
       providers: [
         BlocProvider(create: (context) => UsernameCubit()),
+
         BlocProvider(create: (context) => BmiCubit()),
       ],
       child: const Insulin95(),

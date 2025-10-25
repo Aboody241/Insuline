@@ -67,8 +67,12 @@ class HomePageBody extends StatelessWidget {
                 const HomeIndicators(),
 
                 VerticalSpace(3).of(context),
+                const FeaturesTitle(featureTitle: 'Medication Reminders'),
+                VerticalSpace(1.5).of(context),
 
                 const ReminderWidgets(),
+                
+                VerticalSpace(3).of(context),
 
                 const FeaturesTitle(featureTitle: "Quick Access"),
 
@@ -77,8 +81,6 @@ class HomePageBody extends StatelessWidget {
                 const QuickAccessButtons(),
 
                 VerticalSpace(3).of(context),
-
-                const FeaturesTitle(featureTitle: 'Medication Reminders'),
               ],
             ),
           ),

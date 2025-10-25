@@ -65,15 +65,14 @@ class _ReminderWidgetsState extends State<ReminderWidgets> {
           return Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const FeaturesTitle(featureTitle: 'Medication Reminders'),
-              VerticalSpace(0.5).of(context),
+
               AddReminderWidget(),
             ],
           );
         }
 
         // عرض الأدوية (حد أقصى 3 أدوية في الصفحة الرئيسية)
-        final medicationsToShow = medications.take(3).toList();
+        final medicationsToShow = medications.take(4).toList();
 
         return Column(
           crossAxisAlignment: CrossAxisAlignment.start,

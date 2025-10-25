@@ -11,7 +11,7 @@ class BmiReasault extends StatelessWidget {
       case "overweight":
         return Colors.red;        // الوزن زايد
       case "normal":
-        return Colors.yellow[700]!; // عادي
+        return Colors.green; // عادي
       case "healthy":
         return Colors.green;      // صحي
       case "obese":

@@ -65,7 +65,7 @@ class HomeBMIIndicator extends StatelessWidget {
       case "healthy":
         return Colors.green;
       case "normal":
-        return Colors.yellow[700]!; // أصفر
+        return Colors.green; // أصفر
       case "overweight":
       case "obese":
         return Colors.red;

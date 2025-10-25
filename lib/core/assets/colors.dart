@@ -11,6 +11,8 @@ const KfourC = Color.fromARGB(255, 222, 238, 250);
 //========================================================
 
 const Color KwhiteC = Color(0xffFFFFFF);
+const Color KOffwhiteC = Color(0xffF2F2F2);
+
 const Color KgrayC = Color.fromARGB(255, 189, 189, 189);
 const Color KdarkGrag = Color(0xff444444);
 const Color KblackC = Color.fromARGB(255, 0, 0, 0);

@@ -9,9 +9,14 @@ import 'package:insulin95/features/home/features/home_page_feature/interface/vie
 import 'package:insulin95/features/home/features/home_page_feature/interface/view/widgets/sections/reminder_widegts.dart';
 import 'package:insulin95/features/home/features/notifications/interface/view/notification_view.dart';
 
-class HomePageBody extends StatelessWidget {
+class HomePageBody extends StatefulWidget {
   const HomePageBody({super.key});
 
+  @override
+  State<HomePageBody> createState() => _HomePageBodyState();
+}
+
+class _HomePageBodyState extends State<HomePageBody> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -71,7 +76,7 @@ class HomePageBody extends StatelessWidget {
                 VerticalSpace(1.5).of(context),
 
                 const ReminderWidgets(),
-                
+
                 VerticalSpace(3).of(context),
 
                 const FeaturesTitle(featureTitle: "Quick Access"),

@@ -8,6 +8,7 @@ import 'package:insulin95/controllers/cubit/BMI/calculatebmi/calculatebmi_cubit.
 import 'package:insulin95/core/assets/colors.dart';
 import 'package:insulin95/data/models/medication_model.dart';
 import 'package:insulin95/data/models/bmi_result_model.dart';
+import 'package:insulin95/features/navigation/navbar/nav_Bar.dart';
 import 'package:insulin95/features/splash/interface/Splash/Splash_view.dart';
 import 'firebase_options.dart';
 
@@ -46,7 +47,7 @@ class Insulin95 extends StatelessWidget {
         textTheme: GoogleFonts.lexendTextTheme(),
         scaffoldBackgroundColor: KwhiteC,
       ),
-      home: const SplashView(),
+      home: const NavBar(),
     );
   }
 }

@@ -94,7 +94,7 @@ class Insulin95 extends StatelessWidget {
         ),
         scaffoldBackgroundColor: KwhiteC,
       ),
-      home: const SplashView(),
+      home: const NavBar(),
     );
   }
 }

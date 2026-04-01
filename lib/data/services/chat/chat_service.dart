@@ -5,14 +5,15 @@ import 'package:http/http.dart' as http;
 
 // ⚠️ يفضّل ما تحطش المفتاح داخل التطبيق النهائي.
 // استخدم خادم وسيط أو تخزين آمن. مؤقتًا:
-const GEMINI_API_KEY = "AIzaSyCMJ6BjspQDd5l219kQcJANKsuEzvovXB4";
+const GEMINI_API_KEY = "AIzaSyDiPwBFU26wmmqXKExDdkE5rpy3ad2iQW4";
 
 // اختَر الموديل المناسب لك
-const GEMINI_MODEL = "gemini-2.5-pro";
+const GEMINI_MODEL = "gemini-3-flash-preview";
 
-// Endpoint الصحيح: v1 بدل v1beta
+// Endpoint الأحدث لنماذج 1.5 هو v1beta
 const String _BASE_URL =
-    "https://generativelanguage.googleapis.com/v1/models";
+    "https://generativelanguage.googleapis.com/v1beta/models";
+    
 
 class GeminiService {
   Future<String> getChatResponse(String message) async {

@@ -1,0 +1,99 @@
+﻿Analyzing Insuline...                                           
+
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\core\constants\app_theme.dart:156:56 - deprecated_member_use
+warning - Unused import: 'package:hive_flutter/hive_flutter.dart' - lib\core\services\service_locator.dart:5:8 - unused_import
+warning - Unused import: 'package:flutter_bloc/flutter_bloc.dart' - lib\core\services\service_locator.dart:6:8 - unused_import
+warning - Unused import: 'package:insulin95/controllers/cubit/username/username_cubit.dart' - lib\core\services\service_locator.dart:7:8 - unused_import
+warning - Unused import: 'package:insulin95/controllers/cubit/BMI/calculatebmi/calculatebmi_cubit.dart' - lib\core\services\service_locator.dart:8:8 - unused_import
+warning - Unused import: 'package:insulin95/core/assets/colors.dart' - lib\core\services\service_locator.dart:9:8 - unused_import
+warning - Unused import: 'package:insulin95/data/models/medication_model.dart' - lib\core\services\service_locator.dart:10:8 - unused_import
+warning - Unused import: 'package:insulin95/data/models/bmi_result_model.dart' - lib\core\services\service_locator.dart:11:8 - unused_import
+warning - Unused import: 'package:insulin95/features/navigation/navbar/nav_Bar.dart' - lib\core\services\service_locator.dart:12:8 - unused_import
+warning - Unused import: 'package:insulin95/firebase_options.dart' - lib\core\services\service_locator.dart:13:8 - unused_import
+warning - Unused import: 'package:insulin95/features/recipes/presentation/pages/simple_recipes_page.dart' - lib\core\services\service_locator.dart:24:8 - unused_import
+warning - Unused import: 'package:insulin95/features/Authentication/data/models/user_model.dart' - lib\core\services\service_locator.dart:25:8 - unused_import
+warning - Unused import: 'package:insulin95/features/Authentication/data/datasources/auth_remote_datasource.dart' - lib\core\services\service_locator.dart:26:8 - unused_import
+warning - Unused import: 'package:insulin95/features/Authentication/data/repositories/auth_repository_impl.dart' - lib\core\services\service_locator.dart:27:8 - unused_import
+warning - Unused import: 'package:insulin95/features/Authentication/domain/entities/user.dart' - lib\core\services\service_locator.dart:28:8 - unused_import
+warning - Unused import: 'package:insulin95/features/Authentication/domain/usecases/sign_in.dart' - lib\core\services\service_locator.dart:29:8 - unused_import
+warning - Unused import: 'package:insulin95/features/Authentication/domain/usecases/sign_up.dart' - lib\core\services\service_locator.dart:30:8 - unused_import
+warning - Unused import: 'package:insulin95/features/Authentication/logic/simple_auth_bloc.dart' - lib\core\services\service_locator.dart:31:8 - unused_import
+warning - Unused import: 'package:insulin95/features/Authentication/presentation/pages/simple_auth_page.dart' - lib\core\services\service_locator.dart:32:8 - unused_import
+  error - The method 'toDate' isn't defined for the type 'DateTime' - lib\features\Authentication\data\datasources\auth_remote_datasource.dart:29:50 - undefined_method
+  error - The method 'toDate' isn't defined for the type 'DateTime' - lib\features\Authentication\data\datasources\auth_remote_datasource.dart:30:52 - undefined_method
+  error - The method 'toDate' isn't defined for the type 'DateTime' - lib\features\Authentication\data\datasources\auth_remote_datasource.dart:86:50 - undefined_method
+  error - The method 'toDate' isn't defined for the type 'DateTime' - lib\features\Authentication\data\datasources\auth_remote_datasource.dart:87:52 - undefined_method
+warning - Unused import: '../../logic/simple_auth_bloc.dart' - lib\features\Authentication\presentation\pages\simple_auth_page.dart:2:8 - unused_import
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\BMI\widgets\bmi_page_body.dart:63:45 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\activities\widgets\activity_dash.dart:69:35 - deprecated_member_use
+   info - The import of 'package:hive/hive.dart' is unnecessary because all of the used elements are also provided by the import of 'package:hive_flutter/hive_flutter.dart' - lib\features\home\features\home_page_feature\interface\view\widgets\sections\reminder_widegts.dart:2:8 - unnecessary_import
+   info - Unnecessary use of 'toList' in a spread - lib\features\home\features\home_page_feature\interface\view\widgets\sections\reminder_widegts.dart:94:16 - unnecessary_to_list_in_spreads
+   info - The import of 'package:hive/hive.dart' is unnecessary because all of the used elements are also provided by the import of 'package:hive_flutter/hive_flutter.dart' - lib\features\medication_schedule\widgets\medication_body.dart:6:8 - unnecessary_import
+   info - The imported package 'intl' isn't a dependency of the importing package - lib\features\medication_schedule\widgets\medication_body.dart:8:8 - depend_on_referenced_packages
+   info - The imported package 'intl' isn't a dependency of the importing package - lib\features\recent_mbi_calculation\ui\bmi_recent_page.dart:4:8 - depend_on_referenced_packages
+warning - Unused import: 'package:dartz/dartz.dart' - lib\features\recipes\logic\recipes_bloc.dart:2:8 - unused_import
+warning - Unused import: '../domain/entities/recipe.dart' - lib\features\recipes\logic\recipes_bloc.dart:3:8 - unused_import
+   info - The imported package 'meta' isn't a dependency of the importing package - lib\features\recipes\logic\recipes_event.dart:2:8 - depend_on_referenced_packages
+   info - The imported package 'meta' isn't a dependency of the importing package - lib\features\recipes\logic\recipes_state.dart:2:8 - depend_on_referenced_packages
+  error - The getter '_getRecipes' isn't defined for the type 'RecipesBloc' - lib\features\recipes\presentation\pages\recipes_page.dart:38:51 - undefined_getter
+  error - The getter '_getCategories' isn't defined for the type 'RecipesBloc' - lib\features\recipes\presentation\pages\recipes_page.dart:39:54 - undefined_getter
+  error - The getter '_searchRecipes' isn't defined for the type 'RecipesBloc' - lib\features\recipes\presentation\pages\recipes_page.dart:40:54 - undefined_getter
+warning - The value of the field '_searchController' isn't used - lib\features\recipes\presentation\pages\recipes_page.dart:58:31 - unused_field
+  error - The body might complete normally, causing 'null' to be returned, but the return type, 'Future<void>', is a potentially non-nullable type - lib\features\recipes\presentation\pages\recipes_page.dart:73:25 - body_might_complete_normally
+warning - Unnecessary cast - lib\features\recipes\presentation\pages\recipes_page.dart:75:36 - unnecessary_cast
+warning - Unnecessary cast - lib\features\recipes\presentation\pages\recipes_page.dart:93:26 - unnecessary_cast
+warning - Unnecessary cast - lib\features\recipes\presentation\pages\recipes_page.dart:103:27 - unnecessary_cast
+  error - The constructor being called isn't a const constructor - lib\features\recipes\presentation\pages\recipes_page.dart:112:49 - const_with_non_const
+  error - Expected an identifier - lib\features\recipes\presentation\pages\recipes_page.dart:155:11 - missing_identifier
+  error - Expected to find ']' - lib\features\recipes\presentation\pages\recipes_page.dart:155:11 - expected_token
+warning - Unused import: '../widgets/recipe_card.dart' - lib\features\recipes\presentation\pages\simple_recipes_page.dart:2:8 - unused_import
+warning - Unused import: '../widgets/category_chips.dart' - lib\features\recipes\presentation\pages\simple_recipes_page.dart:3:8 - unused_import
+warning - Unused import: '../widgets/search_bar.dart' - lib\features\recipes\presentation\pages\simple_recipes_page.dart:4:8 - unused_import
+warning - Unused import: '../../../../shared/widgets/states/loading_widget.dart' - lib\features\recipes\presentation\pages\simple_recipes_page.dart:5:8 - unused_import
+warning - Unused import: '../../../../shared/widgets/states/error_widget.dart' - lib\features\recipes\presentation\pages\simple_recipes_page.dart:6:8 - unused_import
+warning - Unused import: '../../../../shared/widgets/states/empty_state_widget.dart' - lib\features\recipes\presentation\pages\simple_recipes_page.dart:7:8 - unused_import
+warning - Unused import: 'package:flutter_bloc/flutter_bloc.dart' - lib\features\recipes\presentation\widgets\category_chips.dart:2:8 - unused_import
+warning - Unused import: '../../logic/recipes_bloc.dart' - lib\features\recipes\presentation\widgets\category_chips.dart:3:8 - unused_import
+warning - Unused import: '../../logic/recipes_state.dart' - lib\features\recipes\presentation\widgets\category_chips.dart:4:8 - unused_import
+warning - Unused import: '../../../../core/assets/colors.dart' - lib\features\recipes\presentation\widgets\category_chips.dart:5:8 - unused_import
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\recipes\presentation\widgets\category_chips.dart:46:63 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\recipes\presentation\widgets\category_chips.dart:51:68 - deprecated_member_use
+warning - Unused import: 'package:flutter_bloc/flutter_bloc.dart' - lib\features\recipes\presentation\widgets\recipe_card.dart:2:8 - unused_import
+warning - Unused import: '../../logic/recipes_bloc.dart' - lib\features\recipes\presentation\widgets\recipe_card.dart:3:8 - unused_import
+warning - Unused import: '../../logic/recipes_state.dart' - lib\features\recipes\presentation\widgets\recipe_card.dart:4:8 - unused_import
+warning - Unused import: '../../../../shared/widgets/forms/custom_button.dart' - lib\features\recipes\presentation\widgets\recipe_card.dart:5:8 - unused_import
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\recipes\presentation\widgets\recipe_card.dart:71:47 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\recipes\presentation\widgets\recipe_card.dart:75:51 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\recipes\presentation\widgets\recipe_card.dart:110:68 - deprecated_member_use
+warning - Unused import: 'package:flutter_bloc/flutter_bloc.dart' - lib\features\recipes\presentation\widgets\search_bar.dart:2:8 - unused_import
+warning - Unused import: '../../logic/recipes_bloc.dart' - lib\features\recipes\presentation\widgets\search_bar.dart:3:8 - unused_import
+warning - Unused import: '../../logic/recipes_event.dart' - lib\features\recipes\presentation\widgets\search_bar.dart:4:8 - unused_import
+warning - Unused import: '../../../../shared/widgets/forms/custom_text_field.dart' - lib\features\recipes\presentation\widgets\search_bar.dart:5:8 - unused_import
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\recipes\presentation\widgets\search_bar.dart:80:56 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\recipes\presentation\widgets\search_bar.dart:89:60 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\recipes\presentation\widgets\search_bar.dart:101:60 - deprecated_member_use
+warning - Unused import: 'package:firebase_auth/firebase_auth.dart' - lib\main.dart:5:8 - unused_import
+   info - Unnecessary braces in a string interpolation - lib\shared\utils\extensions.dart:61:15 - unnecessary_brace_in_string_interps
+   info - Unnecessary braces in a string interpolation - lib\shared\utils\extensions.dart:61:22 - unnecessary_brace_in_string_interps
+   info - Unnecessary braces in a string interpolation - lib\shared\utils\extensions.dart:61:31 - unnecessary_brace_in_string_interps
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\shared\widgets\states\empty_state_widget.dart:31:50 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\shared\widgets\states\empty_state_widget.dart:38:52 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\shared\widgets\states\error_widget.dart:36:64 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\shared\widgets\states\loading_widget.dart:37:52 - deprecated_member_use
+
+flutter : 80 issues found. 
+(ran in 5.4s)
+At line:1 char:1
++ flutter analyze 2>&1 | 
+Out-File -FilePath 
+"analyze_output_2.txt" -Enc 
+...
++ ~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          
+    : NotSpecified: (80 is  
+  sues found. (ran in 5.4   
+ s):String) [], RemoteEx    
+ception
+    + FullyQualifiedErrorId 
+    : NativeCommandError
+ 

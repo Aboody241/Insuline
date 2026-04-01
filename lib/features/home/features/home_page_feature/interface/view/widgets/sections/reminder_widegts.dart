@@ -4,7 +4,6 @@ import 'package:hive_flutter/hive_flutter.dart';
 import 'package:insulin95/core/utlites/size_widgets.dart';
 import 'package:insulin95/data/models/medication_model.dart';
 import 'package:insulin95/features/home/features/home_page_feature/interface/view/widgets/add_reminder_widget.dart';
-import 'package:insulin95/features/home/features/home_page_feature/interface/view/widgets/feature_title.dart';
 import 'package:insulin95/features/home/features/home_page_feature/interface/view/widgets/home_medical_reminder.dart';
 import 'package:insulin95/features/medication_schedule/medication_schedule_view.dart';
 

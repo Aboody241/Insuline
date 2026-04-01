@@ -1,11 +1,8 @@
 // ignore_for_file: file_names, use_build_context_synchronously, unnecessary_brace_in_string_interps
 
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:insulin95/controllers/cubit/username/username_cubit.dart';
-import 'package:insulin95/core/assets/colors.dart';
-import 'package:insulin95/features/navigation/navbar/nav_Bar.dart';
 import 'package:lottie/lottie.dart';
+import '../navigation/navbar/nav_Bar.dart';
 
 class WelcomePage extends StatefulWidget {
   const WelcomePage({super.key});
@@ -49,8 +46,6 @@ class _WelcomePageState extends State<WelcomePage>
 
   @override
   Widget build(BuildContext context) {
-    final userName = context.watch<UsernameCubit>().state ?? "null";
-
     return Scaffold(
       backgroundColor: Colors.white,
       body: Center(
@@ -64,15 +59,6 @@ class _WelcomePageState extends State<WelcomePage>
                 width: 200,
                 height: 200,
                 repeat: false,
-              ),
-              const SizedBox(height: 120),
-              Text(
-                "Welcome, ${userName} 👋",
-                style: const TextStyle(
-                  fontSize: 30,
-                  fontWeight: FontWeight.bold,
-                  color: KprimaryC,
-                ),
               ),
             ],
           ),

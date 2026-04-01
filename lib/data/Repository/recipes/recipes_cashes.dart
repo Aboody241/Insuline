@@ -5,6 +5,23 @@ import 'package:insulin95/features/recipes/widgets/models/recipes_class.dart';
 class RecipesCache {
   static List<RecipesClass>? recipes;
   static String? lastCategory;
+
+  Future<List<String>> getCategories() async {
+    try {
+      final response = await http.get(Uri.parse('https://www.themealdb.com/api/json/v1/1/list.php?c=list'));
+      if (response.statusCode == 200) {
+        final Map<String, dynamic> data = json.decode(response.body);
+        final List<dynamic> items = data['meals'] ?? [];
+        final List<String> categories = items.map((e) => e['strCategory'].toString()).toList();
+        categories.insert(0, 'All');
+        return categories;
+      }
+    } catch (e) {
+      // Return predefined list on error
+      return ['All', 'Beef', 'Chicken', 'Dessert', 'Lamb', 'Miscellaneous', 'Pasta', 'Pork', 'Seafood', 'Side', 'Starter', 'Vegan', 'Vegetarian'];
+    }
+    return ['All', 'Beef', 'Chicken', 'Dessert', 'Lamb', 'Miscellaneous', 'Pasta', 'Pork', 'Seafood', 'Side', 'Starter', 'Vegan', 'Vegetarian'];
+  }
 }
 
 class RecipesService {

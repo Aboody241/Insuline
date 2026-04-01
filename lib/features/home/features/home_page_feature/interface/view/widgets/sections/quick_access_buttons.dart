@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:insulin95/core/assets/colors.dart';
 import 'package:insulin95/core/utlites/size_widgets.dart';
 import 'package:insulin95/core/widgets/custom_buttons.dart';
@@ -56,7 +55,8 @@ class QuickAccessButtons extends StatelessWidget {
               HorizentalSpace(2).of(context),
               Text(
                 "AI Assistant",
-                style: GoogleFonts.lexend(
+                style: const TextStyle(
+                  fontFamily: 'Lexend',
                   fontWeight: FontWeight.bold,
                   fontSize: 16,
                   color: KwhiteC,

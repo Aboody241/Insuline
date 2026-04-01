@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class CustomButton1 extends StatelessWidget {
   final Color color;
@@ -27,7 +26,8 @@ class CustomButton1 extends StatelessWidget {
         child: Center(
           child: Text(
             title,
-            style: GoogleFonts.lexend(
+            style: TextStyle(
+              fontFamily: 'Lexend',
               fontWeight: FontWeight.bold,
               fontSize: 16,
               color: titleColor,
@@ -66,7 +66,8 @@ class CustomButton2 extends StatelessWidget {
         child: Center(
           child: Text(
             title,
-            style: GoogleFonts.lexend(
+            style: TextStyle(
+              fontFamily: 'Lexend',
               fontWeight: FontWeight.bold,
               fontSize: 16,
               color: titleColor,

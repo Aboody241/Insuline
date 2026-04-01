@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:insulin95/core/assets/colors.dart';
 import 'package:insulin95/core/assets/fonts.dart';
-import 'package:insulin95/core/assets/on_board_style.dart';
 import 'package:insulin95/core/utlites/size_widgets.dart';
 import 'package:insulin95/core/widgets/custom_app_bar.dart';
 import 'package:insulin95/features/BMI/widgets/bmi_page_body.dart';

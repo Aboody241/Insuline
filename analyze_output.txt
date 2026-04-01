@@ -1,0 +1,310 @@
+﻿Analyzing Insuline...                                           
+
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\core\constants\app_theme.dart:156:56 - deprecated_member_use
+  error - Target of URI doesn't exist: 'features/recipes/data/datasources/recipes_remote_datasource.dart' - lib\core\services\service_locator.dart:16:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: 'features/recipes/data/datasources/recipes_local_datasource.dart' - lib\core\services\service_locator.dart:17:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: 'features/recipes/data/repositories/recipes_repository_impl.dart' - lib\core\services\service_locator.dart:18:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: 'features/recipes/domain/repositories/recipes_repository.dart' - lib\core\services\service_locator.dart:19:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: 'features/recipes/domain/usecases/get_recipes.dart' - lib\core\services\service_locator.dart:20:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: 'features/recipes/domain/usecases/get_categories.dart' - lib\core\services\service_locator.dart:21:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: 'features/recipes/domain/usecases/search_recipes.dart' - lib\core\services\service_locator.dart:22:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: 'features/recipes/logic/recipes_bloc.dart' - lib\core\services\service_locator.dart:23:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: 'features/recipes/presentation/pages/simple_recipes_page.dart' - lib\core\services\service_locator.dart:24:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: 'features/authentication/data/models/user_model.dart' - lib\core\services\service_locator.dart:25:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: 'features/authentication/data/datasources/auth_remote_datasource.dart' - lib\core\services\service_locator.dart:26:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: 'features/authentication/data/repositories/auth_repository_impl.dart' - lib\core\services\service_locator.dart:27:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: 'features/authentication/domain/entities/user.dart' - lib\core\services\service_locator.dart:28:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: 'features/authentication/domain/usecases/sign_in.dart' - lib\core\services\service_locator.dart:29:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: 'features/authentication/domain/usecases/sign_up.dart' - lib\core\services\service_locator.dart:30:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: 'features/authentication/logic/simple_auth_bloc.dart' - lib\core\services\service_locator.dart:31:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: 'features/authentication/presentation/pages/simple_auth_page.dart' - lib\core\services\service_locator.dart:32:8 - uri_does_not_exist
+  error - The name 'RecipesRemoteDataSource' isn't a type, so it can't be used as a type argument - lib\core\services\service_locator.dart:88:28 - non_type_as_type_argument
+  error - The function 'RecipesRemoteDataSourceImpl' isn't defined - lib\core\services\service_locator.dart:89:11 - undefined_function
+  error - The name 'RecipesLocalDataSource' isn't a type, so it can't be used as a type argument - lib\core\services\service_locator.dart:93:28 - non_type_as_type_argument
+  error - The function 'RecipesLocalDataSourceImpl' isn't defined - lib\core\services\service_locator.dart:94:11 - undefined_function
+  error - The name 'RecipesRepository' isn't a type, so it can't be used as a type argument - lib\core\services\service_locator.dart:98:28 - non_type_as_type_argument
+  error - The function 'RecipesRepositoryImpl' isn't defined - lib\core\services\service_locator.dart:99:11 - undefined_function
+  error - The name 'GetRecipes' isn't a type, so it can't be used as a type argument - lib\core\services\service_locator.dart:106:28 - non_type_as_type_argument
+  error - The function 'GetRecipes' isn't defined - lib\core\services\service_locator.dart:107:11 - undefined_function
+  error - The name 'GetCategories' isn't a type, so it can't be used as a type argument - lib\core\services\service_locator.dart:110:28 - non_type_as_type_argument
+  error - The function 'GetCategories' isn't defined - lib\core\services\service_locator.dart:111:11 - undefined_function
+  error - The name 'SearchRecipes' isn't a type, so it can't be used as a type argument - lib\core\services\service_locator.dart:114:28 - non_type_as_type_argument
+  error - The function 'SearchRecipes' isn't defined - lib\core\services\service_locator.dart:115:11 - undefined_function
+  error - The name 'RecipesBloc' isn't a type, so it can't be used as a type argument - lib\core\services\service_locator.dart:119:22 - non_type_as_type_argument
+  error - The function 'RecipesBloc' isn't defined - lib\core\services\service_locator.dart:120:11 - undefined_function
+  error - Target of URI doesn't exist: '../repositories/auth_repository.dart' - lib\features\Authentication\data\datasources\auth_remote_datasource.dart:3:8 - uri_does_not_exist
+  error - Classes and mixins can only implement other classes and mixins - lib\features\Authentication\data\datasources\auth_remote_datasource.dart:7:39 - implements_non_class
+  error - Undefined class 'FirebaseAuth' - lib\features\Authentication\data\datasources\auth_remote_datasource.dart:8:9 - undefined_class
+  error - The name 'User' isn't a type, so it can't be used as a type argument - lib\features\Authentication\data\datasources\auth_remote_datasource.dart:13:25 - non_type_as_type_argument
+warning - The method doesn't override an inherited method - lib\features\Authentication\data\datasources\auth_remote_datasource.dart:13:32 - override_on_non_overriding_member
+  error - 1 positional argument expected by 'fromEntity', but 0 found - lib\features\Authentication\data\datasources\auth_remote_datasource.dart:23:11 - not_enough_positional_arguments
+  error - The named parameter 'id' isn't defined - lib\features\Authentication\data\datasources\auth_remote_datasource.dart:23:11 - undefined_named_parameter
+  error - The named parameter 'email' isn't defined - lib\features\Authentication\data\datasources\auth_remote_datasource.dart:24:11 - undefined_named_parameter
+  error - The named parameter 'name' isn't defined - lib\features\Authentication\data\datasources\auth_remote_datasource.dart:25:11 - undefined_named_parameter
+  error - The named parameter 'avatarUrl' isn't defined - lib\features\Authentication\data\datasources\auth_remote_datasource.dart:26:11 - undefined_named_parameter
+  error - The named parameter 'createdAt' isn't defined - lib\features\Authentication\data\datasources\auth_remote_datasource.dart:27:11 - undefined_named_parameter
+  error - The named parameter 'updatedAt' isn't defined - lib\features\Authentication\data\datasources\auth_remote_datasource.dart:28:11 - undefined_named_parameter
+  error - The name 'User' isn't a type, so it can't be used as a type argument - lib\features\Authentication\data\datasources\auth_remote_datasource.dart:39:25 - non_type_as_type_argument
+warning - The method doesn't override an inherited method - lib\features\Authentication\data\datasources\auth_remote_datasource.dart:39:32 - override_on_non_overriding_member
+  error - 1 positional argument expected by 'fromEntity', but 0 found - lib\features\Authentication\data\datasources\auth_remote_datasource.dart:49:11 - not_enough_positional_arguments
+  error - The named parameter 'id' isn't defined - lib\features\Authentication\data\datasources\auth_remote_datasource.dart:49:11 - undefined_named_parameter
+  error - The named parameter 'email' isn't defined - lib\features\Authentication\data\datasources\auth_remote_datasource.dart:50:11 - undefined_named_parameter
+  error - The named parameter 'name' isn't defined - lib\features\Authentication\data\datasources\auth_remote_datasource.dart:51:11 - undefined_named_parameter
+  error - The named parameter 'avatarUrl' isn't defined - lib\features\Authentication\data\datasources\auth_remote_datasource.dart:52:11 - undefined_named_parameter
+  error - The named parameter 'createdAt' isn't defined - lib\features\Authentication\data\datasources\auth_remote_datasource.dart:53:11 - undefined_named_parameter
+  error - The named parameter 'updatedAt' isn't defined - lib\features\Authentication\data\datasources\auth_remote_datasource.dart:54:11 - undefined_named_parameter
+  error - Methods can't be invoked in constant expressions - lib\features\Authentication\data\datasources\auth_remote_datasource.dart:57:46 - const_eval_method_invocation
+  error - Undefined name 'e' - lib\features\Authentication\data\datasources\auth_remote_datasource.dart:57:46 - undefined_identifier
+  error - The name 'User' isn't a type, so it can't be used as a type argument - lib\features\Authentication\data\datasources\auth_remote_datasource.dart:65:25 - non_type_as_type_argument
+warning - The method doesn't override an inherited method - lib\features\Authentication\data\datasources\auth_remote_datasource.dart:65:32 - override_on_non_overriding_member
+  error - The name 'User' isn't a type, so it can't be used as a type argument - lib\features\Authentication\data\datasources\auth_remote_datasource.dart:75:25 - non_type_as_type_argument
+warning - The method doesn't override an inherited method - lib\features\Authentication\data\datasources\auth_remote_datasource.dart:75:32 - override_on_non_overriding_member
+  error - 1 positional argument expected by 'fromEntity', but 0 found - lib\features\Authentication\data\datasources\auth_remote_datasource.dart:80:11 - not_enough_positional_arguments
+  error - The named parameter 'id' isn't defined - lib\features\Authentication\data\datasources\auth_remote_datasource.dart:80:11 - undefined_named_parameter
+  error - The named parameter 'email' isn't defined - lib\features\Authentication\data\datasources\auth_remote_datasource.dart:81:11 - undefined_named_parameter
+  error - The named parameter 'name' isn't defined - lib\features\Authentication\data\datasources\auth_remote_datasource.dart:82:11 - undefined_named_parameter
+  error - The named parameter 'avatarUrl' isn't defined - lib\features\Authentication\data\datasources\auth_remote_datasource.dart:83:11 - undefined_named_parameter
+  error - The named parameter 'createdAt' isn't defined - lib\features\Authentication\data\datasources\auth_remote_datasource.dart:84:11 - undefined_named_parameter
+  error - The named parameter 'updatedAt' isn't defined - lib\features\Authentication\data\datasources\auth_remote_datasource.dart:85:11 - undefined_named_parameter
+  error - The name 'User' isn't a type, so it can't be used as a type argument - lib\features\Authentication\data\datasources\auth_remote_datasource.dart:96:25 - non_type_as_type_argument
+warning - The method doesn't override an inherited method - lib\features\Authentication\data\datasources\auth_remote_datasource.dart:96:32 - override_on_non_overriding_member
+  error - Undefined class 'User' - lib\features\Authentication\data\datasources\auth_remote_datasource.dart:96:46 - undefined_class
+warning - The method doesn't override an inherited method - lib\features\Authentication\data\datasources\auth_remote_datasource.dart:106:32 - override_on_non_overriding_member
+  error - Target of URI doesn't exist: '../repositories/auth_repository.dart' - lib\features\Authentication\data\repositories\auth_repository_impl.dart:3:8 - uri_does_not_exist
+  error - Classes and mixins can only implement other classes and mixins - lib\features\Authentication\data\repositories\auth_repository_impl.dart:7:37 - implements_non_class
+  error - The name 'User' isn't a type, so it can't be used as a type argument - lib\features\Authentication\data\repositories\auth_repository_impl.dart:13:25 - non_type_as_type_argument
+warning - The method doesn't override an inherited method - lib\features\Authentication\data\repositories\auth_repository_impl.dart:13:32 - override_on_non_overriding_member
+  error - The name 'User' isn't a type, so it can't be used as a type argument - lib\features\Authentication\data\repositories\auth_repository_impl.dart:18:25 - non_type_as_type_argument
+warning - The method doesn't override an inherited method - lib\features\Authentication\data\repositories\auth_repository_impl.dart:18:32 - override_on_non_overriding_member
+  error - The name 'User' isn't a type, so it can't be used as a type argument - lib\features\Authentication\data\repositories\auth_repository_impl.dart:23:25 - non_type_as_type_argument
+warning - The method doesn't override an inherited method - lib\features\Authentication\data\repositories\auth_repository_impl.dart:23:32 - override_on_non_overriding_member
+  error - The name 'User' isn't a type, so it can't be used as a type argument - lib\features\Authentication\data\repositories\auth_repository_impl.dart:28:25 - non_type_as_type_argument
+warning - The method doesn't override an inherited method - lib\features\Authentication\data\repositories\auth_repository_impl.dart:28:32 - override_on_non_overriding_member
+  error - The name 'User' isn't a type, so it can't be used as a type argument - lib\features\Authentication\data\repositories\auth_repository_impl.dart:33:25 - non_type_as_type_argument
+warning - The method doesn't override an inherited method - lib\features\Authentication\data\repositories\auth_repository_impl.dart:33:32 - override_on_non_overriding_member
+  error - Undefined class 'User' - lib\features\Authentication\data\repositories\auth_repository_impl.dart:33:46 - undefined_class
+warning - The method doesn't override an inherited method - lib\features\Authentication\data\repositories\auth_repository_impl.dart:38:32 - override_on_non_overriding_member
+  error - 2 positional arguments expected by 'resetPassword', but 1 found - lib\features\Authentication\data\repositories\auth_repository_impl.dart:39:54 - not_enough_positional_arguments
+  error - The argument type 'Either<String, User>' can't be assigned to the parameter type 'User'.  - lib\features\Authentication\domain\usecases\sign_in.dart:35:20 - argument_type_not_assignable
+warning - The declaration '<unnamed>' isn't referenced - lib\features\Authentication\domain\usecases\sign_up.dart:7:7 - unused_element
+  error - The body might complete normally, causing 'null' to be returned, but the return type, 'FutureOr<Either<String, User>>', is a potentially non-nullable type - lib\features\Authentication\domain\usecases\sign_up.dart:14:32 - body_might_complete_normally
+   info - Invalid regular expression syntax - lib\features\Authentication\domain\usecases\sign_up.dart:36:35 - valid_regexps
+  error - Unterminated string literal - lib\features\Authentication\domain\usecases\sign_up.dart:36:74 - unterminated_string_literal
+   info - Statements in an if should be enclosed in a block - lib\features\Authentication\domain\usecases\sign_up.dart:37:7 - curly_braces_in_flow_control_structures
+  error - Expected to find ')' - lib\features\Authentication\domain\usecases\sign_up.dart:37:7 - expected_token
+  error - Expected a class member - lib\features\Authentication\domain\usecases\sign_up.dart:40:5 - expected_class_member
+  error - Expected an identifier - lib\features\Authentication\domain\usecases\sign_up.dart:40:9 - missing_identifier
+  error - Methods must have an explicit list of parameters - lib\features\Authentication\domain\usecases\sign_up.dart:40:9 - missing_method_parameters
+  error - The await expression can only be used in an async function - lib\features\Authentication\domain\usecases\sign_up.dart:41:20 - await_in_wrong_context
+  error - Undefined name 'email' - lib\features\Authentication\domain\usecases\sign_up.dart:41:44 - undefined_identifier
+  error - Undefined name 'password' - lib\features\Authentication\domain\usecases\sign_up.dart:41:51 - undefined_identifier
+  error - Expected a class member - lib\features\Authentication\domain\usecases\sign_up.dart:43:7 - expected_class_member
+  error - Expected an identifier - lib\features\Authentication\domain\usecases\sign_up.dart:43:13 - missing_identifier
+  error - Expected a method, getter, setter or operator declaration - lib\features\Authentication\domain\usecases\sign_up.dart:47:1 - expected_executable
+  error - Target of URI doesn't exist: '../entities/user.dart' - lib\features\Authentication\logic\auth_bloc.dart:3:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../repositories/auth_repository.dart' - lib\features\Authentication\logic\auth_bloc.dart:4:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../usecases/sign_in.dart' - lib\features\Authentication\logic\auth_bloc.dart:5:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../usecases/sign_up.dart' - lib\features\Authentication\logic\auth_bloc.dart:6:8 - uri_does_not_exist
+  error - The name 'AuthEvent' isn't a type, so it can't be used as a type argument - lib\features\Authentication\logic\auth_bloc.dart:10:29 - non_type_as_type_argument
+  error - Undefined class 'AuthRepository' - lib\features\Authentication\logic\auth_bloc.dart:11:9 - undefined_class
+  error - Undefined class 'SignIn' - lib\features\Authentication\logic\auth_bloc.dart:12:9 - undefined_class
+  error - Undefined class 'SignUp' - lib\features\Authentication\logic\auth_bloc.dart:13:9 - undefined_class
+  error - The name 'AuthEvent' isn't a type, so it can't be used as a type argument - lib\features\Authentication\logic\auth_bloc.dart:20:8 - non_type_as_type_argument
+  error - The name 'SignIn' isn't defined, so it can't be used in an 'is' expression - lib\features\Authentication\logic\auth_bloc.dart:21:20 - type_test_with_undefined_name
+  error - The property 'email' can't be unconditionally accessed because the receiver can be 'null' - lib\features\Authentication\logic\auth_bloc.dart:23:45 - unchecked_use_of_nullable_value
+  error - The property 'password' can't be unconditionally accessed because the receiver can be 'null' - lib\features\Authentication\logic\auth_bloc.dart:23:58 - unchecked_use_of_nullable_value
+  error - 1 positional argument expected by 'AuthError.new', but 0 found - lib\features\Authentication\logic\auth_bloc.dart:25:37 - not_enough_positional_arguments
+  error - The named parameter 'error' isn't defined - lib\features\Authentication\logic\auth_bloc.dart:25:37 - undefined_named_parameter
+warning - Dead code - lib\features\Authentication\logic\auth_bloc.dart:28:14 - dead_code
+  error - The name 'SignUp' isn't defined, so it can't be used in an 'is' expression - lib\features\Authentication\logic\auth_bloc.dart:28:27 - type_test_with_undefined_name
+  error - The property 'email' can't be unconditionally accessed because the receiver can be 'null' - lib\features\Authentication\logic\auth_bloc.dart:30:45 - unchecked_use_of_nullable_value
+  error - The property 'password' can't be unconditionally accessed because the receiver can be 'null' - lib\features\Authentication\logic\auth_bloc.dart:30:58 - unchecked_use_of_nullable_value
+  error - 1 positional argument expected by 'AuthError.new', but 0 found - lib\features\Authentication\logic\auth_bloc.dart:32:37 - not_enough_positional_arguments
+  error - The named parameter 'error' isn't defined - lib\features\Authentication\logic\auth_bloc.dart:32:37 - undefined_named_parameter
+  error - The name 'SignOut' isn't defined, so it can't be used in an 'is' expression - lib\features\Authentication\logic\auth_bloc.dart:35:27 - type_test_with_undefined_name
+  error - 1 positional argument expected by 'AuthError.new', but 0 found - lib\features\Authentication\logic\auth_bloc.dart:39:37 - not_enough_positional_arguments
+  error - The named parameter 'error' isn't defined - lib\features\Authentication\logic\auth_bloc.dart:39:37 - undefined_named_parameter
+  error - The name 'GetCurrentUser' isn't defined, so it can't be used in an 'is' expression - lib\features\Authentication\logic\auth_bloc.dart:42:27 - type_test_with_undefined_name
+  error - 1 positional argument expected by 'AuthError.new', but 0 found - lib\features\Authentication\logic\auth_bloc.dart:46:37 - not_enough_positional_arguments
+  error - The named parameter 'error' isn't defined - lib\features\Authentication\logic\auth_bloc.dart:46:37 - undefined_named_parameter
+  error - 1 positional argument expected by 'AuthAuthenticated.new', but 0 found - lib\features\Authentication\logic\auth_bloc.dart:47:44 - not_enough_positional_arguments
+  error - The named parameter 'user' isn't defined - lib\features\Authentication\logic\auth_bloc.dart:47:44 - undefined_named_parameter
+  error - Expected to find ';' - lib\features\Authentication\logic\auth_bloc.dart:50:5 - expected_token
+  error - Expected to find ')' - lib\features\Authentication\logic\auth_bloc.dart:51:5 - expected_token
+  error - Expected a method, getter, setter or operator declaration - lib\features\Authentication\logic\auth_bloc.dart:53:1 - expected_executable
+  error - Undefined name 'immutable' used as an annotation - lib\features\Authentication\logic\auth_bloc.dart:56:1 - undefined_annotation
+  error - Undefined class 'User' - lib\features\Authentication\logic\auth_bloc.dart:74:9 - undefined_class
+  error - Target of URI doesn't exist: '../entities/user.dart' - lib\features\Authentication\logic\simple_auth_bloc.dart:3:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../repositories/auth_repository.dart' - lib\features\Authentication\logic\simple_auth_bloc.dart:4:8 - uri_does_not_exist
+  error - Undefined class 'AuthRepository' - lib\features\Authentication\logic\simple_auth_bloc.dart:9:9 - undefined_class
+warning - The method doesn't override an inherited method - lib\features\Authentication\logic\simple_auth_bloc.dart:14:27 - override_on_non_overriding_member
+  error - 1 positional argument expected by 'SimpleAuthError.new', but 0 found - lib\features\Authentication\logic\simple_auth_bloc.dart:19:36 - not_enough_positional_arguments
+  error - The named parameter 'error' isn't defined - lib\features\Authentication\logic\simple_auth_bloc.dart:19:36 - undefined_named_parameter
+  error - 1 positional argument expected by 'SimpleAuthError.new', but 0 found - lib\features\Authentication\logic\simple_auth_bloc.dart:26:36 - not_enough_positional_arguments
+  error - The named parameter 'error' isn't defined - lib\features\Authentication\logic\simple_auth_bloc.dart:26:36 - undefined_named_parameter
+  error - Undefined name 'immutable' used as an annotation - lib\features\Authentication\logic\simple_auth_bloc.dart:34:1 - undefined_annotation
+  error - Undefined name 'immutable' used as an annotation - lib\features\Authentication\logic\simple_auth_bloc.dart:62:1 - undefined_annotation
+  error - Undefined class 'User' - lib\features\Authentication\logic\simple_auth_bloc.dart:82:9 - undefined_class
+  error - Expected a method, getter, setter or operator declaration - lib\features\Authentication\logic\simple_auth_bloc.dart:107:1 - expected_executable
+  error - Target of URI doesn't exist: '../logic/simple_auth_bloc.dart' - lib\features\Authentication\presentation\pages\simple_auth_page.dart:2:8 - uri_does_not_exist
+   info - Unnecessary 'const' keyword - lib\features\Authentication\presentation\pages\simple_auth_page.dart:23:13 - unnecessary_const
+  error - Methods can't be invoked in constant expressions - lib\features\Authentication\presentation\pages\simple_auth_page.dart:25:22 - const_eval_method_invocation
+   info - Unnecessary 'const' keyword - lib\features\Authentication\presentation\pages\simple_auth_page.dart:30:13 - unnecessary_const
+   info - Unnecessary 'const' keyword - lib\features\Authentication\presentation\pages\simple_auth_page.dart:32:13 - unnecessary_const
+   info - Unnecessary 'const' keyword - lib\features\Authentication\presentation\pages\simple_auth_page.dart:38:13 - unnecessary_const
+   info - Unnecessary 'const' keyword - lib\features\Authentication\presentation\pages\simple_auth_page.dart:39:13 - unnecessary_const
+   info - Unnecessary 'const' keyword - lib\features\Authentication\presentation\pages\simple_auth_page.dart:40:13 - unnecessary_const
+   info - Unnecessary 'const' keyword - lib\features\Authentication\presentation\pages\simple_auth_page.dart:41:13 - unnecessary_const
+   info - Unnecessary 'const' keyword - lib\features\Authentication\presentation\pages\simple_auth_page.dart:43:13 - unnecessary_const
+   info - Unnecessary 'const' keyword - lib\features\Authentication\presentation\pages\simple_auth_page.dart:49:13 - unnecessary_const
+   info - Unnecessary 'const' keyword - lib\features\Authentication\presentation\pages\simple_auth_page.dart:50:13 - unnecessary_const
+   info - Unnecessary 'const' keyword - lib\features\Authentication\presentation\pages\simple_auth_page.dart:51:13 - unnecessary_const
+   info - Unnecessary 'const' keyword - lib\features\Authentication\presentation\pages\simple_auth_page.dart:53:13 - unnecessary_const
+   info - Unnecessary 'const' keyword - lib\features\Authentication\presentation\pages\simple_auth_page.dart:59:13 - unnecessary_const
+   info - Unnecessary 'const' keyword - lib\features\Authentication\presentation\pages\simple_auth_page.dart:60:13 - unnecessary_const
+   info - Unnecessary 'const' keyword - lib\features\Authentication\presentation\pages\simple_auth_page.dart:61:13 - unnecessary_const
+   info - Unnecessary 'const' keyword - lib\features\Authentication\presentation\pages\simple_auth_page.dart:63:13 - unnecessary_const
+   info - Unnecessary 'const' keyword - lib\features\Authentication\presentation\pages\simple_auth_page.dart:69:13 - unnecessary_const
+   info - Unnecessary 'const' keyword - lib\features\Authentication\presentation\pages\simple_auth_page.dart:70:13 - unnecessary_const
+   info - Unnecessary 'const' keyword - lib\features\Authentication\presentation\pages\simple_auth_page.dart:71:13 - unnecessary_const
+  error - The constructor being called isn't a const constructor - lib\features\Authentication\presentation\pages\simple_auth_page.dart:73:13 - const_with_non_const
+   info - Unnecessary 'const' keyword - lib\features\Authentication\presentation\pages\simple_auth_page.dart:74:24 - unnecessary_const
+  error - The constructor being called isn't a const constructor - lib\features\Authentication\presentation\pages\simple_auth_page.dart:77:31 - const_with_non_const
+  error - The constructor being called isn't a const constructor - lib\features\Authentication\presentation\pages\simple_auth_page.dart:78:25 - const_with_non_const
+   info - Unnecessary 'const' keyword - lib\features\Authentication\presentation\pages\simple_auth_page.dart:90:19 - unnecessary_const
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\BMI\widgets\bmi_page_body.dart:63:45 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\activities\widgets\activity_dash.dart:69:35 - deprecated_member_use
+   info - The import of 'package:hive/hive.dart' is unnecessary because all of the used elements are also provided by the import of 'package:hive_flutter/hive_flutter.dart' - lib\features\home\features\home_page_feature\interface\view\widgets\sections\reminder_widegts.dart:2:8 - unnecessary_import
+   info - Unnecessary use of 'toList' in a spread - lib\features\home\features\home_page_feature\interface\view\widgets\sections\reminder_widegts.dart:94:16 - unnecessary_to_list_in_spreads
+   info - The import of 'package:hive/hive.dart' is unnecessary because all of the used elements are also provided by the import of 'package:hive_flutter/hive_flutter.dart' - lib\features\medication_schedule\widgets\medication_body.dart:6:8 - unnecessary_import
+   info - The imported package 'intl' isn't a dependency of the importing package - lib\features\medication_schedule\widgets\medication_body.dart:8:8 - depend_on_referenced_packages
+   info - The imported package 'intl' isn't a dependency of the importing package - lib\features\recent_mbi_calculation\ui\bmi_recent_page.dart:4:8 - depend_on_referenced_packages
+  error - The method 'toEntity' isn't defined for the type 'Recipe' - lib\features\recipes\data\repositories\recipes_repository_impl.dart:154:39 - undefined_method
+warning - Unused import: 'package:dartz/dartz.dart' - lib\features\recipes\logic\recipes_bloc.dart:2:8 - unused_import
+warning - Unused import: '../domain/entities/recipe.dart' - lib\features\recipes\logic\recipes_bloc.dart:3:8 - unused_import
+   info - The imported package 'meta' isn't a dependency of the importing package - lib\features\recipes\logic\recipes_event.dart:2:8 - depend_on_referenced_packages
+   info - The imported package 'meta' isn't a dependency of the importing package - lib\features\recipes\logic\recipes_state.dart:2:8 - depend_on_referenced_packages
+  error - Target of URI doesn't exist: '../logic/recipes_bloc.dart' - lib\features\recipes\presentation\pages\recipes_page.dart:3:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../logic/recipes_event.dart' - lib\features\recipes\presentation\pages\recipes_page.dart:4:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../logic/recipes_state.dart' - lib\features\recipes\presentation\pages\recipes_page.dart:5:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../../../../shared/widgets/states/app_error_widget.dart' - lib\features\recipes\presentation\pages\recipes_page.dart:10:8 - uri_does_not_exist
+  error - The method 'RecipesBloc' isn't defined for the type 'RecipesPage' - lib\features\recipes\presentation\pages\recipes_page.dart:37:30 - undefined_method
+  error - The name 'RecipesBloc' isn't a type, so it can't be used as a type argument - lib\features\recipes\presentation\pages\recipes_page.dart:38:36 - non_type_as_type_argument
+  error - The name 'RecipesBloc' isn't a type, so it can't be used as a type argument - lib\features\recipes\presentation\pages\recipes_page.dart:39:39 - non_type_as_type_argument
+  error - The name 'RecipesBloc' isn't a type, so it can't be used as a type argument - lib\features\recipes\presentation\pages\recipes_page.dart:40:39 - non_type_as_type_argument
+warning - The value of the field '_searchController' isn't used - lib\features\recipes\presentation\pages\recipes_page.dart:58:31 - unused_field
+  error - The name 'RecipesBloc' isn't a type, so it can't be used as a type argument - lib\features\recipes\presentation\pages\recipes_page.dart:64:18 - non_type_as_type_argument
+  error - The method 'LoadCategories' isn't defined for the type '_RecipesViewState' - lib\features\recipes\presentation\pages\recipes_page.dart:64:37 - undefined_method
+  error - The name 'RecipesBloc' isn't a type, so it can't be used as a type argument - lib\features\recipes\presentation\pages\recipes_page.dart:65:18 - non_type_as_type_argument
+  error - The name 'LoadRecipes' isn't a class - lib\features\recipes\presentation\pages\recipes_page.dart:65:43 - creation_with_non_type
+  error - The name 'RecipesBloc' isn't a type, so it can't be used as a type argument - lib\features\recipes\presentation\pages\recipes_page.dart:70:24 - non_type_as_type_argument
+  error - The name 'RecipesState' isn't a type, so it can't be used as a type argument - lib\features\recipes\presentation\pages\recipes_page.dart:70:37 - non_type_as_type_argument
+  error - The body might complete normally, causing 'null' to be returned, but the return type, 'Future<void>', is a potentially non-nullable type - lib\features\recipes\presentation\pages\recipes_page.dart:73:25 - body_might_complete_normally
+  error - The name 'RecipesLoaded' isn't defined, so it can't be used in an 'is' expression - lib\features\recipes\presentation\pages\recipes_page.dart:74:26 - type_test_with_undefined_name
+  error - The name 'RecipesLoaded' isn't a type, so it can't be used in an 'as' expression - lib\features\recipes\presentation\pages\recipes_page.dart:75:45 - cast_to_non_type
+  error - The name 'RecipesBloc' isn't a type, so it can't be used as a type argument - lib\features\recipes\presentation\pages\recipes_page.dart:76:28 - non_type_as_type_argument
+  error - The method 'RefreshRecipes' isn't defined for the type '_RecipesViewState' - lib\features\recipes\presentation\pages\recipes_page.dart:77:17 - undefined_method
+  error - Undefined class 'RecipesState' - lib\features\recipes\presentation\pages\recipes_page.dart:87:43 - undefined_class
+  error - The name 'RecipesLoading' isn't defined, so it can't be used in an 'is' expression - lib\features\recipes\presentation\pages\recipes_page.dart:88:18 - type_test_with_undefined_name
+warning - Dead code - lib\features\recipes\presentation\pages\recipes_page.dart:92:5 - dead_code
+  error - The name 'RecipesError' isn't defined, so it can't be used in an 'is' expression - lib\features\recipes\presentation\pages\recipes_page.dart:92:18 - type_test_with_undefined_name
+  error - The name 'RecipesError' isn't a type, so it can't be used in an 'as' expression - lib\features\recipes\presentation\pages\recipes_page.dart:93:35 - cast_to_non_type
+  error - The method 'AppErrorWidget' isn't defined for the type '_RecipesViewState' - lib\features\recipes\presentation\pages\recipes_page.dart:94:14 - undefined_method
+  error - The name 'RecipesBloc' isn't a type, so it can't be used as a type argument - lib\features\recipes\presentation\pages\recipes_page.dart:97:24 - non_type_as_type_argument
+  error - The name 'LoadRecipes' isn't a class - lib\features\recipes\presentation\pages\recipes_page.dart:97:49 - creation_with_non_type
+  error - The name 'RecipesLoaded' isn't defined, so it can't be used in an 'is' expression - lib\features\recipes\presentation\pages\recipes_page.dart:102:18 - type_test_with_undefined_name
+  error - The name 'RecipesLoaded' isn't a type, so it can't be used in an 'as' expression - lib\features\recipes\presentation\pages\recipes_page.dart:103:36 - cast_to_non_type
+  error - The name 'RecipesBloc' isn't a type, so it can't be used as a type argument - lib\features\recipes\presentation\pages\recipes_page.dart:110:30 - non_type_as_type_argument
+  error - The method 'SearchRecipes' isn't defined for the type '_RecipesViewState' - lib\features\recipes\presentation\pages\recipes_page.dart:110:49 - undefined_method
+  error - The name 'RecipesBloc' isn't a type, so it can't be used as a type argument - lib\features\recipes\presentation\pages\recipes_page.dart:112:30 - non_type_as_type_argument
+  error - The name 'ClearSearch' isn't a class - lib\features\recipes\presentation\pages\recipes_page.dart:112:55 - creation_with_non_type
+  error - The name 'RecipesBloc' isn't a type, so it can't be used as a type argument - lib\features\recipes\presentation\pages\recipes_page.dart:124:30 - non_type_as_type_argument
+  error - The method 'LoadRecipes' isn't defined for the type '_RecipesViewState' - lib\features\recipes\presentation\pages\recipes_page.dart:124:49 - undefined_method
+  error - The name 'RecipesBloc' isn't a type, so it can't be used as a type argument - lib\features\recipes\presentation\pages\recipes_page.dart:147:40 - non_type_as_type_argument
+  error - The method 'ToggleFavorite' isn't defined for the type '_RecipesViewState' - lib\features\recipes\presentation\pages\recipes_page.dart:148:29 - undefined_method
+  error - Expected an identifier - lib\features\recipes\presentation\pages\recipes_page.dart:155:11 - missing_identifier
+  error - Expected to find ']' - lib\features\recipes\presentation\pages\recipes_page.dart:155:11 - expected_token
+warning - Unused import: '../widgets/recipe_card.dart' - lib\features\recipes\presentation\pages\simple_recipes_page.dart:2:8 - unused_import
+warning - Unused import: '../widgets/category_chips.dart' - lib\features\recipes\presentation\pages\simple_recipes_page.dart:3:8 - unused_import
+warning - Unused import: '../widgets/search_bar.dart' - lib\features\recipes\presentation\pages\simple_recipes_page.dart:4:8 - unused_import
+warning - Unused import: '../../../../shared/widgets/states/loading_widget.dart' - lib\features\recipes\presentation\pages\simple_recipes_page.dart:5:8 - unused_import
+  error - Target of URI doesn't exist: '../../../../shared/widgets/states/app_error_widget.dart' - lib\features\recipes\presentation\pages\simple_recipes_page.dart:6:8 - uri_does_not_exist
+warning - Unused import: '../../../../shared/widgets/states/empty_state_widget.dart' - lib\features\recipes\presentation\pages\simple_recipes_page.dart:7:8 - unused_import
+   info - Unnecessary 'const' keyword - lib\features\recipes\presentation\pages\simple_recipes_page.dart:30:13 - unnecessary_const
+   info - Unnecessary 'const' keyword - lib\features\recipes\presentation\pages\simple_recipes_page.dart:34:13 - unnecessary_const
+   info - Unnecessary 'const' keyword - lib\features\recipes\presentation\pages\simple_recipes_page.dart:35:13 - unnecessary_const
+   info - Unnecessary 'const' keyword - lib\features\recipes\presentation\pages\simple_recipes_page.dart:36:13 - unnecessary_const
+   info - Unnecessary 'const' keyword - lib\features\recipes\presentation\pages\simple_recipes_page.dart:39:13 - unnecessary_const
+   info - Unnecessary 'const' keyword - lib\features\recipes\presentation\pages\simple_recipes_page.dart:43:13 - unnecessary_const
+   info - Unnecessary 'const' keyword - lib\features\recipes\presentation\pages\simple_recipes_page.dart:44:13 - unnecessary_const
+   info - Unnecessary 'const' keyword - lib\features\recipes\presentation\pages\simple_recipes_page.dart:45:13 - unnecessary_const
+   info - Unnecessary 'const' keyword - lib\features\recipes\presentation\pages\simple_recipes_page.dart:48:13 - unnecessary_const
+   info - Unnecessary 'const' keyword - lib\features\recipes\presentation\pages\simple_recipes_page.dart:52:13 - unnecessary_const
+   info - Unnecessary 'const' keyword - lib\features\recipes\presentation\pages\simple_recipes_page.dart:53:13 - unnecessary_const
+   info - Unnecessary 'const' keyword - lib\features\recipes\presentation\pages\simple_recipes_page.dart:54:13 - unnecessary_const
+   info - Unnecessary 'const' keyword - lib\features\recipes\presentation\pages\simple_recipes_page.dart:57:13 - unnecessary_const
+   info - Unnecessary 'const' keyword - lib\features\recipes\presentation\pages\simple_recipes_page.dart:61:13 - unnecessary_const
+   info - Unnecessary 'const' keyword - lib\features\recipes\presentation\pages\simple_recipes_page.dart:62:13 - unnecessary_const
+   info - Unnecessary 'const' keyword - lib\features\recipes\presentation\pages\simple_recipes_page.dart:63:13 - unnecessary_const
+   info - Unnecessary 'const' keyword - lib\features\recipes\presentation\pages\simple_recipes_page.dart:66:13 - unnecessary_const
+   info - Unnecessary 'const' keyword - lib\features\recipes\presentation\pages\simple_recipes_page.dart:70:13 - unnecessary_const
+   info - Unnecessary 'const' keyword - lib\features\recipes\presentation\pages\simple_recipes_page.dart:71:13 - unnecessary_const
+   info - Unnecessary 'const' keyword - lib\features\recipes\presentation\pages\simple_recipes_page.dart:72:13 - unnecessary_const
+   info - Unnecessary 'const' keyword - lib\features\recipes\presentation\pages\simple_recipes_page.dart:75:13 - unnecessary_const
+   info - Unnecessary 'const' keyword - lib\features\recipes\presentation\pages\simple_recipes_page.dart:79:13 - unnecessary_const
+   info - Unnecessary 'const' keyword - lib\features\recipes\presentation\pages\simple_recipes_page.dart:80:13 - unnecessary_const
+   info - Unnecessary 'const' keyword - lib\features\recipes\presentation\pages\simple_recipes_page.dart:81:13 - unnecessary_const
+  error - The constructor being called isn't a const constructor - lib\features\recipes\presentation\pages\simple_recipes_page.dart:84:13 - const_with_non_const
+   info - Unnecessary 'const' keyword - lib\features\recipes\presentation\pages\simple_recipes_page.dart:85:24 - unnecessary_const
+  error - The constructor being called isn't a const constructor - lib\features\recipes\presentation\pages\simple_recipes_page.dart:88:31 - const_with_non_const
+  error - The constructor being called isn't a const constructor - lib\features\recipes\presentation\pages\simple_recipes_page.dart:89:25 - const_with_non_const
+   info - Unnecessary 'const' keyword - lib\features\recipes\presentation\pages\simple_recipes_page.dart:101:19 - unnecessary_const
+   info - Unnecessary 'const' keyword - lib\features\recipes\presentation\pages\simple_recipes_page.dart:102:19 - unnecessary_const
+   info - Unnecessary 'const' keyword - lib\features\recipes\presentation\pages\simple_recipes_page.dart:103:19 - unnecessary_const
+   info - Unnecessary 'const' keyword - lib\features\recipes\presentation\pages\simple_recipes_page.dart:104:19 - unnecessary_const
+   info - Unnecessary 'const' keyword - lib\features\recipes\presentation\pages\simple_recipes_page.dart:105:19 - unnecessary_const
+   info - Unnecessary 'const' keyword - lib\features\recipes\presentation\pages\simple_recipes_page.dart:106:19 - unnecessary_const
+warning - Unused import: 'package:flutter_bloc/flutter_bloc.dart' - lib\features\recipes\presentation\widgets\category_chips.dart:2:8 - unused_import
+warning - Unused import: '../../logic/recipes_bloc.dart' - lib\features\recipes\presentation\widgets\category_chips.dart:3:8 - unused_import
+warning - Unused import: '../../logic/recipes_state.dart' - lib\features\recipes\presentation\widgets\category_chips.dart:4:8 - unused_import
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\recipes\presentation\widgets\category_chips.dart:45:63 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\recipes\presentation\widgets\category_chips.dart:50:68 - deprecated_member_use
+warning - Unused import: 'package:flutter_bloc/flutter_bloc.dart' - lib\features\recipes\presentation\widgets\recipe_card.dart:2:8 - unused_import
+warning - Unused import: '../../logic/recipes_bloc.dart' - lib\features\recipes\presentation\widgets\recipe_card.dart:3:8 - unused_import
+warning - Unused import: '../../logic/recipes_state.dart' - lib\features\recipes\presentation\widgets\recipe_card.dart:4:8 - unused_import
+warning - Unused import: '../../../../shared/widgets/forms/custom_button.dart' - lib\features\recipes\presentation\widgets\recipe_card.dart:5:8 - unused_import
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\recipes\presentation\widgets\recipe_card.dart:71:47 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\recipes\presentation\widgets\recipe_card.dart:75:51 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\recipes\presentation\widgets\recipe_card.dart:110:68 - deprecated_member_use
+warning - Unused import: 'package:flutter_bloc/flutter_bloc.dart' - lib\features\recipes\presentation\widgets\search_bar.dart:2:8 - unused_import
+warning - Unused import: '../../logic/recipes_bloc.dart' - lib\features\recipes\presentation\widgets\search_bar.dart:3:8 - unused_import
+warning - Unused import: '../../logic/recipes_event.dart' - lib\features\recipes\presentation\widgets\search_bar.dart:4:8 - unused_import
+warning - Unused import: '../../../../shared/widgets/forms/custom_text_field.dart' - lib\features\recipes\presentation\widgets\search_bar.dart:5:8 - unused_import
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\recipes\presentation\widgets\search_bar.dart:80:56 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\recipes\presentation\widgets\search_bar.dart:89:60 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\recipes\presentation\widgets\search_bar.dart:101:60 - deprecated_member_use
+warning - Unused import: 'package:firebase_auth/firebase_auth.dart' - lib\main.dart:5:8 - unused_import
+   info - Unnecessary braces in a string interpolation - lib\shared\utils\extensions.dart:61:15 - unnecessary_brace_in_string_interps
+   info - Unnecessary braces in a string interpolation - lib\shared\utils\extensions.dart:61:22 - unnecessary_brace_in_string_interps
+   info - Unnecessary braces in a string interpolation - lib\shared\utils\extensions.dart:61:31 - unnecessary_brace_in_string_interps
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\shared\widgets\states\empty_state_widget.dart:31:50 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\shared\widgets\states\empty_state_widget.dart:38:52 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\shared\widgets\states\error_widget.dart:36:64 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\shared\widgets\states\loading_widget.dart:37:52 - deprecated_member_use
+
+flutter : 291 issues found. 
+(ran in 64.5s)
+At line:1 char:1
++ flutter analyze 2>&1 | 
+Out-File -FilePath 
+"analyze_output.txt" -Encod 
+...
++ ~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo           
+   : NotSpecified:     (291 
+issues found. (    ran in 
+64.5s):String    ) [], 
+RemoteExceptio    n
+    + FullyQualifiedErro    
+rId : NativeCommandE    rror
+ 
